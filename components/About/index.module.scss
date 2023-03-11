@@ -1,0 +1,26 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  row-gap: 30px;
+  align-items: center;
+  height: 250px;
+  color: #D8E7C1;
+  font-size: 20px;
+  background: #26358c;
+  border-bottom: 1px solid #000;
+
+
+  &Image {
+    outline: 3px solid yellow;
+  }
+
+  &Text {
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 50px;
+    margin-bottom: 5px;
+    line-height: 24px;
+    word-wrap: break-word;
+  }
+}

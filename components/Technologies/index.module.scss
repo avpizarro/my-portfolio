@@ -1,0 +1,45 @@
+.techsContainer {
+  background: yellow;
+  border-bottom: 1px solid;
+  overflow: hidden;
+
+  &:hover .techs {
+    animation-play-state: paused;
+    transform: translateX(100%);
+  }
+}
+.techs {
+  height: 90px;
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  animation: scroll-left 30s linear infinite;
+}
+
+.techs svg {
+  width: 90px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .techs {
+    animation: scroll-left 40s linear infinite;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .techs {
+    height: 60px;
+  }
+
+  .techs svg {
+    width: 60px;
+  }
+}

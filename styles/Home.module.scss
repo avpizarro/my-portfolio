@@ -1,0 +1,112 @@
+/* color variables */
+$clr-primary: yellow;
+$clr-primary-light: #bf97fc;
+$clr-primary-dark: #091034;
+$clr-gray100: #f9fbff;
+$clr-gray150: #f4f6fb;
+$clr-gray200: #eef1f6;
+$clr-gray300: #e1e5ee;
+$clr-gray400: #767b91;
+$clr-gray500: #4f546c;
+$clr-gray600: #2a324b;
+$clr-gray700: #161d34;
+$clr-bg: white;
+
+.text {
+  font-family: var(--archivo-font);
+}
+
+.mastHead {
+  height: 153px;
+  background: #39fd8b;
+  animation: 36s linear infinite bgColor;
+  &Expanded {
+    animation: 36s linear infinite bgColor;
+    height: 300px;
+    z-index: 1000;
+    border-bottom: 1px solid;
+  }
+}
+
+@keyframes bgColor {
+  0% {
+    background-color: #39fd8b;
+  }
+  8.3% {
+    background-color: #39fd8b;
+  }
+  16.6% {
+    background-color: #79fde7;
+  }
+  24.9% {
+    background-color: #1dcafd;
+  }
+  33.2% {
+    background-color: #596ee3;
+  }
+  41.5% {
+    background-color: #b166ff;
+  }
+  49.8% {
+    background-color: #e78afd;
+  }
+  48.1% {
+    background-color: #fd60b2;
+  }
+  56.4% {
+    background-color: #fd7056;
+  }
+  64.7% {
+    background-color: #fd507f;
+  }
+  73% {
+    background-color: #ffda40;
+  }
+  81.3% {
+    background-color: #ffff40;
+  }
+  89.6% {
+    background-color: #a9fc7a;
+  }
+  97.9% {
+    background-color: #39fd8b;
+  }
+}
+
+.menu {
+  // height: calc(154px - 92px);
+  &Contracted {
+    border-bottom: 1px solid;
+    background: #fff;
+  }
+  &Expanded {
+    background: transparent;
+    border-bottom: none;
+  }
+
+  &Contracted button {
+    border: none;
+    border-right: 1px solid;
+  }
+
+  &Expanded button {
+    border: none;
+    border-right: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mastHead {
+    height: 95px;
+  }
+
+  .menu button svg {
+    height: calc(95px - 84px);
+  }
+}
+
+.form {
+  &__input {
+    border: 2px solid #000;
+  }
+}

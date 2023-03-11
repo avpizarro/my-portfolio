@@ -1,0 +1,22 @@
+.projects {
+  padding: 20px 40px 40px 40px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid;
+  font-family: var(--karla-font);
+  z-index: 1;
+  border-bottom: 1px solid;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.projects::-webkit-scrollbar {
+  display: none;
+}

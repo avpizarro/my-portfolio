@@ -1,0 +1,59 @@
+.project {
+  background: #bf97fc;
+  padding: 30px;
+  border: 1px solid;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  counter-reset: none;
+  align-items: center;
+
+  &Link {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  &Image {
+    border: 1px solid #000;
+    outline: 3px solid #bf97fc;
+
+  }
+
+  &Title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: var(--archivo-font);
+    border: 3px solid #bf97fc;
+  }
+
+  &Description {
+    font-size: 16px;
+    white-space: normal;
+    width: 100%;
+    text-align: left;
+  }
+
+  &Icon {
+    border: 3px solid #bf97fc;
+    font-size: 30px;
+    color: #000;
+  }
+
+  &Icon:hover {
+    border: 3px solid yellow;
+    border-radius: 50%;
+  }
+
+  &Title:hover {
+    border: 3px solid yellow;
+  }
+
+  &Image:hover {
+    outline: 3px solid yellow;
+  }
+}
