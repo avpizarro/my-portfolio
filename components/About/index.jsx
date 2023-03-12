@@ -4,7 +4,7 @@ import profile from '../../images/profilePicture.jpg';
 
 const About = () => {
   return (
-    <section className={styles.about}>
+    <section className={styles.about} id="about">
       <div>
         <Image
           className={styles.aboutImage}

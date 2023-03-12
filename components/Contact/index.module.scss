@@ -17,6 +17,7 @@ $clr-bg: white;
   grid-template-rows: auto 1fr auto;
   place-items: center;
   padding: 40px;
+  padding-top: 0px;
   gap: 30px;
   align-items: center;
   height: fit-content;
@@ -60,6 +61,10 @@ $clr-bg: white;
     cursor: text;
     transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
     background-color: $clr-bg;
+  }
+
+  &Name {
+    padding-top:35px;
   }
 }
 

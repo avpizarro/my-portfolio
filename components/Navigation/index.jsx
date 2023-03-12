@@ -1,3 +1,4 @@
+import {Link} from 'react-scroll';
 import styles from './index.module.scss';
 
 const Navigation = () => {
@@ -5,8 +6,8 @@ const Navigation = () => {
     <nav>
       <div className={styles.navContainer}>
         <ul className={styles.navList}>
-          <li>About</li>
-          <li>Contact</li>
+          <li><Link activeClass="active" to="about" spy={true} smooth={true}>About</Link></li>
+          <li><Link activeClass="active" to="contact" spy={true} smooth={true}>Contact</Link></li>
         </ul>
       </div>
     </nav>

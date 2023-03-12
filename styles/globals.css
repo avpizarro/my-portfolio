@@ -15,6 +15,7 @@ small {
 .kw-alert-error {
   color: black !important;
   background: yellow !important;
+  margin-bottom: 0 !important;
 }
 
 .kw-alert-warning {

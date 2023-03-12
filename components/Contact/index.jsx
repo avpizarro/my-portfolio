@@ -10,11 +10,15 @@ const Contact = () => {
   return (
     <>
       <form
+        id="contact"
         className={'kwes-form'}
         action="https://kwesforms.com/api/foreign/forms/wdaT9viw8Zn3uML7gxC3"
       >
         <input type="hidden" name="_subject" value="Portfolio Contact" />
         <div className={styles.contact}>
+          <div className={cl(styles.form, styles.div, styles.formName)}>
+            <h3>Contact</h3>
+          </div>
           <div className={cl(styles.form, styles.div)}>
             <input
               type="text"
