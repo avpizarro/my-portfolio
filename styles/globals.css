@@ -21,3 +21,11 @@ small {
 .kw-alert-warning {
   display: none !important;
 }
+
+.calendly-badge-widget, .calendly-badge-content {
+  position: relative !important;
+  bottom: 0px !important;
+  right: 0px !important;
+  z-index: 0 !important;
+  box-shadow: none !important;
+ }

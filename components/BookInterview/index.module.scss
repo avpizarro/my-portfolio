@@ -1,4 +1,5 @@
 .interview {
+  position: relative;
   height: 100px;
   display: flex;
   flex-direction: row;
@@ -11,16 +12,35 @@
     fill: #39fd8b;
   }
 
-  &SVG:hover {
-    fill: #a9fc7a;
-  }
+  // &SVG:hover {
+  //   fill: #a9fc7a;
+  // }
 
   &SVG:active {
     fill: yellow;
     filter: drop-shadow(3px 5px 2px #adadad);
   }
+
 }
 
-.interview > span {
-  padding-right: 20px;
+.top {
+  position: absolute;
+}
+
+.bottom {
+  margin-right: 20px;
+}
+
+.top {
+  z-index: 9;
+  right: 50%;
+}
+
+.top:hover + .bottom {
+  fill: #a9fc7a;
+}
+
+.top:active + .bottom {
+  fill: yellow;
+  filter: drop-shadow(3px 5px 2px #adadad);
 }

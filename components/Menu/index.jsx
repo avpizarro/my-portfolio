@@ -4,8 +4,6 @@ import Link from 'next/link';
 
 import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineTwitter } from 'react-icons/ai';
 
-import { TbBrandMastodon } from 'react-icons/tb';
-
 import { RiMastodonFill } from 'react-icons/ri';
 
 import styles from './index.module.scss';
