@@ -9,7 +9,7 @@ import { Karla, Archivo } from '@next/font/google'
 import styles from '../styles/Home.module.scss';
 
 // Import components
-import { Header, Main, Footer, Technologies, Project } from "../components/index"
+import { Header, Main, Footer, Project } from "../components/index"
 
 // Define the fonts variables as per next/font requirements
 const karla = Karla({ weight: ['400', '700'], subsets: ['latin'], variable: '--karla-font' })
@@ -40,10 +40,9 @@ export default function Home({ projects })
       <div className={archivo.variable}>
         <div className={styles.text}>
           <Header onClick={onClick} className={expand ? styles.menuExpanded : styles.menuContracted} className1={expand ? styles.menuExpanded : styles.siteBranding} className3={expand ? styles.mastHeadExpanded : styles.mastHead} />
-          <Main children=
+          <Main>
             {projects.map(project => (<Project key={project._id} name={project.name} description={project.description} url={project.url} github={project.github} image={urlFor(project.image.asset).url()} />))}
-          />
-          {/* <Technologies /> */}
+          </Main>
           <Footer />
         </div>
       </div>
