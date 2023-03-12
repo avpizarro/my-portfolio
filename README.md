@@ -4,6 +4,11 @@ This is a redesign to my portfolio after a trip to Cali Colombia, inspired in th
 
 The website is hosted on Vercel, and the data is managed in Sanity CMS.
 
+# Link
+
+Deployed app: https://my-portfolio-avpizarro.vercel.app
+Github: https://github.com/avpizarro/my-portfolio.git
+
 # Technologies Used
 
 [Next.js](https://nextjs.org) - The React framework for production
