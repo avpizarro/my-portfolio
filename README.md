@@ -15,4 +15,9 @@ Github: https://github.com/avpizarro/my-portfolio.git
 [Next.js](https://nextjs.org) - The React framework for production  
 [Sanity](https://www.sanity.io) - The platform for structured content  
 [Vercel](https://vercel.com) - The platform for deploying web projects  
-[KwesForms](https://kwesforms.com) - Cloud-based platform for creating forms
+[KwesForms](https://kwesforms.com) - Cloud-based platform for creating forms  
+
+
+
+![PortfolioTop](./public/Readme%20Images/Portfolio.png)
+![PortfolioBottom](./public/Readme%20Images/Portfolio%202.png)
