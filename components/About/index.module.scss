@@ -9,10 +9,12 @@
   font-size: 20px;
   background: #26358c;
   border-bottom: 1.5px solid #000;
+  overflow-x: hidden;
 
 
   &Image {
     outline: 3px solid yellow;
+    margin-left: 50px;
   }
 
   &Text {
@@ -22,5 +24,16 @@
     margin-bottom: 5px;
     line-height: 24px;
     word-wrap: break-word;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .aboutImage{
+    width: 150px;
+    height: auto;
+    margin-left: 40px;
+  }
+  .aboutText {
+    font-size: 18px;
   }
 }
