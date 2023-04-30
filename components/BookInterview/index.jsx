@@ -10,7 +10,7 @@ function BookInterview() {
       <div className={styles.top}>
         <PopupWidget
           className={styles.interviewBtn}
-          url="https://calendly.com/avpizarro"
+          url="https://calendly.com/avaldespizarro"
           rootElement={
             typeof window !== 'undefined'
               ? document.getElementById('__next')
