@@ -31,6 +31,11 @@ export default {
             name: 'github',
             title: 'GitHub',
             type: 'url',
+        },
+        {
+            name: 'altText',
+            title: 'altText',
+            type: 'string',
         }
     ]
 }
