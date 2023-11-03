@@ -19,7 +19,7 @@ const Project = ({ name, image, description, url, github }) => {
         <Image
           className={styles.projectImage}
           src={image}
-          alt="Principal carer home"
+          alt={name}
           width={340}
           height={217}
           priority
