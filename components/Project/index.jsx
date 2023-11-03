@@ -12,14 +12,14 @@ const karla = Karla({
   variable: '--karla-font',
 });
 
-const Project = ({ name, image, description, url, github }) => {
+const Project = ({ name, image, description, url, github, altText }) => {
   return (
     <article className={styles.project}>
       <Link href={url} className={styles.projectLink}>
         <Image
           className={styles.projectImage}
           src={image}
-          alt={name}
+          alt={altText}
           width={340}
           height={217}
           priority

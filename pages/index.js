@@ -41,7 +41,7 @@ export default function Home({ projects })
         <div className={styles.text}>
           <Header onClick={onClick} className={expand ? styles.menuExpanded : styles.menuContracted} className1={expand ? styles.menuExpanded : styles.siteBranding} className3={expand ? styles.mastHeadExpanded : styles.mastHead} />
           <Main>
-            {projects.map(project => (<Project key={project._id} name={project.name} description={project.description} url={project.url} github={project.github} image={urlFor(project.image.asset).url()} />))}
+            {projects.map(project => (<Project key={project._id} name={project.name} description={project.description} url={project.url} github={project.github} image={urlFor(project.image.asset).url()} altText={project.altText}/>))}
           </Main>
           <Footer />
         </div>
