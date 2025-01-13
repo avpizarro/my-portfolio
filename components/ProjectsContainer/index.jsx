@@ -1,5 +1,5 @@
 import cl from 'classnames';
-import { Karla } from '@next/font/google'
+import { Karla } from "next/font/google"
 
 import styles from './index.module.scss';
 

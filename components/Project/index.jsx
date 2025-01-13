@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Karla } from '@next/font/google';
+import { Karla } from "next/font/google";
 
 import styles from './index.module.scss';
 

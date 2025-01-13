@@ -6,8 +6,8 @@ const Navigation = () => {
     <nav>
       <div className={styles.navContainer}>
         <ul className={styles.navList}>
-          <li><Link activeClass="active" to="about" spy={true} smooth={true}>About</Link></li>
-          <li><Link activeClass="active" to="contact" spy={true} smooth={true}>Contact</Link></li>
+          <li>About</li>
+          <li>Contact</li>
         </ul>
       </div>
     </nav>

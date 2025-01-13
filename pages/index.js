@@ -5,7 +5,7 @@ import { createClient } from 'next-sanity';
 import imageUrlBuilder from '@sanity/image-url';
 
 // Import Styles and fonts
-import { Karla, Archivo } from '@next/font/google'
+import { Karla, Archivo } from "next/font/google"
 import styles from '../styles/Home.module.scss';
 
 // Import components
