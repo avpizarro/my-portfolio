@@ -28,7 +28,7 @@ const Menu = ({onClick , className, open}) => {
         <ul>
           <li className={styles.projects}>PROJECTS</li>
           {/* <li className={styles.work}>WORK</li> */}
-          <Link className={styles.menuLink} href={'https://drive.google.com/file/d/1IT09XhDUAB1AUXI1qdZhFZEHbKfB9Ap3/view?usp=sharing'}>
+          <Link className={styles.menuLink} href={'https://drive.google.com/file/d/1aw2WAOdj_4Poy-xRtXcPhmBsg7kkgMyA/view?usp=sharing'}>
           <li className={styles.resume}>RESUME</li>
           </Link>
         </ul>
