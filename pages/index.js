@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { createClient } from 'next-sanity';
 import imageUrlBuilder from '@sanity/image-url';
 
+
 // Import Styles and fonts
 import { Karla, Archivo } from "next/font/google"
 import styles from '../styles/Home.module.scss';
@@ -18,7 +19,6 @@ const archivo = Archivo({ weight: ['400', '500'], subsets: ['latin'], variable: 
 
 export default function Home({ projects })
 {
-
   const [expand, setExpand] = useState(false);
 
   const onClick = (e) =>

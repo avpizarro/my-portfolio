@@ -12,6 +12,10 @@
     list-style: none;
     font-size: 12px;
     margin-right: 20px;
+
+    &Li {
+      color: black;
+    }
   }
 
   &List li:hover {
