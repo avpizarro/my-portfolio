@@ -1,4 +1,0 @@
-{
-  "extends": "@sanity/eslint-config-studio",
-  "react/no-unescaped-entities": "off"
-}
