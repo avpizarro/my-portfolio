@@ -1,5 +1,5 @@
 // Import required tools
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { createClient } from 'next-sanity';
 import imageUrlBuilder from '@sanity/image-url';
@@ -24,7 +24,6 @@ export default function Home({ projects })
   const onClick = (e) =>
   {
     e.preventDefault();
-    // console.log('I have been clicked')
     setExpand(expand => !expand);
   }
 
@@ -66,7 +65,6 @@ export const urlFor = (source) => builder.image(source);
 export async function getStaticProps()
 {
   const projects = await client.fetch(`*[_type == "project"]`);
-  // console.log(projects);
   return {
     props: {
       projects: projects
