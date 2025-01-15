@@ -1,24 +1,29 @@
 // import {Link} from 'react-scroll';
+"use client"
 import styles from './index.module.scss';
 import Link from 'next/link';
-import { useEffect } from 'react';
+import { useEffect, useState, useRef } from 'react';
+import Lenis from "lenis";
+// Import the scroll 
+import { useSmoothScroller } from '../ScrollContext';
 
 const Navigation = () => {
 
+  const scrollerRef = useSmoothScroller();
+
   useEffect(() => {
-    console.log("I should be back to 0")
-    // Reset scroll on page reload
-    if (window.location.hash) {
-      window.scrollTo(0, 0);
-    }
-  }, []);
+    scrollerRef?.on('scroll', e => {
+      console.log(e);
+    })
+
+  }, [scrollerRef]);
 
   return (
     <nav>
       <div className={styles.navContainer}>
         <ul className={styles.navList}>
-          <li><Link href="#about" className={styles.navListLi} scroll={false}>About</Link></li>
-          <li><Link href="#contact" className={styles.navListLi} scroll={false}>Contact</Link></li>
+          <li><Link href="#about" className={styles.navListLi} onClick={() => scrollerRef.scrollTo('#about')}>About</Link></li>
+          <li><Link href="#contact" className={styles.navListLi} onClick={() => scrollerRef.scrollTo('#contact')}>Contact</Link></li>
         </ul>
       </div>
     </nav>

@@ -13,6 +13,7 @@
     "classnames": "^2.5.1",
     "eslint-config-next": "15.1.4",
     "kwesforms": "^2.2.9",
+    "lenis": "^1.1.19",
     "next": "15.1.4",
     "next-sanity": "^9.8.35",
     "react": "19.0.0",

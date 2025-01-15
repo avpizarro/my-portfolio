@@ -11,6 +11,8 @@ import styles from '../styles/Home.module.scss';
 
 // Import components
 import { Header, Main, Footer, Project } from "../components/index"
+// import ScrollControl from '../components/ScrollControl';
+import ScrollContext from '../components/ScrollContext';
 
 // Define the fonts variables as per next/font requirements
 const karla = Karla({ weight: ['400', '700'], subsets: ['latin'], variable: '--karla-font' })
@@ -36,15 +38,17 @@ export default function Home({ projects })
 
         <link rel="shortcut icon" href='/favicon.ico' />
       </Head>
-      <div className={archivo.variable}>
-        <div className={styles.text}>
-          <Header onClick={onClick} className={expand ? styles.menuExpanded : styles.menuContracted} className1={expand ? styles.menuExpanded : styles.siteBranding} className3={expand ? styles.mastHeadExpanded : styles.mastHead} />
-          <Main>
-            {projects.map(project => (<Project key={project._id} name={project.name} description={project.description} url={project.url} github={project.github} image={urlFor(project.image.asset).url()} altText={project.altText}/>))}
-          </Main>
-          <Footer />
+      <ScrollContext>
+        <div className={archivo.variable}>
+          <div className={styles.text}>
+            <Header onClick={onClick} className={expand ? styles.menuExpanded : styles.menuContracted} className1={expand ? styles.menuExpanded : styles.siteBranding} className3={expand ? styles.mastHeadExpanded : styles.mastHead} />
+            <Main>
+              {projects.map(project => (<Project key={project._id} name={project.name} description={project.description} url={project.url} github={project.github} image={urlFor(project.image.asset).url()} altText={project.altText} />))}
+            </Main>
+            <Footer />
+          </div>
         </div>
-      </div>
+      </ScrollContext>
     </>
   )
 }
