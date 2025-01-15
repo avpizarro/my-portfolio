@@ -21,6 +21,9 @@ export default function ScrollContext({ children }) {
     // Create a Lenis instance to handle smooth scrolling.
     const scroller = new Lenis();
 
+    // Scroll to top when Lenis initializes
+    scroller.scrollTo(0, { immediate: true });
+
     // Variable to store the requestAnimationFrame ID for the smooth scrolling loop.
     let rf;
 

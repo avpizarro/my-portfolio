@@ -22,8 +22,26 @@ const Navigation = () => {
     <nav>
       <div className={styles.navContainer}>
         <ul className={styles.navList}>
-          <li><Link href="#about" className={styles.navListLi} onClick={() => scrollerRef.scrollTo('#about')}>About</Link></li>
-          <li><Link href="#contact" className={styles.navListLi} onClick={() => scrollerRef.scrollTo('#contact')}>Contact</Link></li>
+          <li>
+            <Link 
+              href="#about" 
+              className={styles.navListLi}
+              onClick={(e) => {
+              e.preventDefault(); // Prevent the default link behavior
+              scrollerRef.scrollTo('#about')}}>
+                About
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#contact"
+              className={styles.navListLi}
+              onClick={(e) => {
+                e.preventDefault(); // Prevent the default link behavior
+                scrollerRef.scrollTo('#contact')}}>
+                  Contact
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
