@@ -2,6 +2,9 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,7 +14,6 @@
   "dependencies": {
     "@sanity/image-url": "^1.1.0",
     "classnames": "^2.5.1",
-    "eslint-config-next": "15.1.4",
     "kwesforms": "^2.2.9",
     "lenis": "^1.1.19",
     "next": "15.1.4",
@@ -24,6 +26,7 @@
     "styled-components": "^6.1.14"
   },
   "devDependencies": {
+    "eslint-config-next": "15.1.4",
     "eslint": "^9.18.0"
   }
 }
