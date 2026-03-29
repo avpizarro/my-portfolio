@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className={styles.footer}>
             <h6>
-            © 2023 Copyright
+            © 2026 Copyright
             </h6>
             </div>
     )

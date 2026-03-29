@@ -17,8 +17,7 @@ const About = () => {
       </div>
       <div className={styles.aboutText}>
         <p>
-          Junior Full Stack Developer with experience in production, product
-          development and logistics.
+          Full Stack Developer with a background in fashion production and digital transformation. Currently building RAG chatbots and AI agents.
         </p>
       </div>
     </section>
